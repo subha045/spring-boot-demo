@@ -10,10 +10,4 @@ public class DemoRestController {
 	public String greetHello() {
 		return "Hello World";
 	}
-
-	@GetMapping("/greet/{name}")
-	public String greetHello(@PathVariable String name) {
-		return "Hello " + name;
-	}
-
 }
