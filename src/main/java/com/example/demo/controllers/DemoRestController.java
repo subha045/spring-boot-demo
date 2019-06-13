@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoRestController {
 	
-	//@Value("${service.greeting}")
-    	//private String message;
+	@Value("${service.greeting}")
+    	private String message;
 	
 	@GetMapping("/greet")
 	public String greetHello() {
-		return "Hello";
+		return message;
 	}
 }
